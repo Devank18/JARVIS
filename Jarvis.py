@@ -18,11 +18,11 @@ def wishme():
     currentDT = datetime.datetime.now()
     hour = currentDT.hour
     if hour>=0 and hour<12:
-        speak("Good Morning Devank! Have a Good Day Ahead.")
+        speak("Good Morning Devank! Have a Good Day Ahead!")
     elif hour>12 and hour<18:
-        speak("Good Afternoon Devank! Hope you are having a Good Day.")
+        speak("Good Afternoon Devank! Hope you are having a Good Day!")
     elif hour>=18 and hour<0:
-        speak(" Good Evening Devank! Hope you had a Good Day.")
+        speak(" Good Evening Devank! Hope you had a Good Day!")
 
     speak("Hello Sir! I am Jarvis, How may I help you?")
 
@@ -63,6 +63,8 @@ if __name__ =="__main__":
             webbrowser.open("google.com")
         elif 'open facebook' in query:
             webbrowser.open("facebook.com")
+        elif 'open instagram' in query:
+            webbrowser.open("instagram.com")
         elif 'the time' in query:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")
             print(strTime)
