@@ -49,7 +49,7 @@ if __name__ =="__main__":
     #if 1:
         query = takeCommand().lower()
         # logic for executing tasks based on query
-        #query = 'wikipedia Where is Kerala?'
+        #query = 'wikipedia Where is USA?'
         if 'wikipedia' in query:
             speak('Searching Wikipedia...')
             query = query.replace("wikipedia","")
@@ -68,8 +68,5 @@ if __name__ =="__main__":
             print(strTime)
             speak(f"Sir, the time is {strTime}")
         elif 'open visual studio code' in query:
-            codePath = "C:\\Users\\AbhishekEmmanuel\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Visual Studio Code"
+            codePath = "C:\\Users\\"
             os.startfile(codePath)
-
-
-            #photoshopPath = "C:\\Program Files\\Adobe\\Adobe Photoshop CC 2019\\Photoshop.exe"
